@@ -1,0 +1,48 @@
+.header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: #C2E1F6;
+    background-color: #01735A;
+    padding: 20px 25px;
+    width: max-content;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+}
+
+h1::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #849e41;
+    bottom: -5px;
+    left: 51%;
+    transition: 0.3s all;
+}
+
+h1:hover:before {
+    width: 51%;
+    left: 0;
+}
+
+h1::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #849e41;
+    bottom: -5px;
+    right: 51%;
+    transition: 0.3s all;
+}
+
+h1:hover:after {
+    width: 51%;
+    right: 0;
+}
